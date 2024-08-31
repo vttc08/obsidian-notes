@@ -1,5 +1,6 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
+const mapTitle = "Digital Garden"
 
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
@@ -21,6 +22,7 @@ export const defaultContentPageLayout: PageLayout = {
     Component.ArticleTitle(),
     Component.ContentMeta(),
     Component.TagList(),
+    Component.OnlyFor({titles: [mapTitle]}, Component.Explorer()),
   ],
   left: [
     Component.PageTitle(),
@@ -28,6 +30,7 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Search(),
     Component.Darkmode(),
     Component.DesktopOnly(Component.Explorer()),
+    Component.MobileOnly(Component.Map()),
   ],
   right: [
     Component.Graph(),
@@ -45,6 +48,7 @@ export const defaultListPageLayout: PageLayout = {
     Component.Search(),
     Component.Darkmode(),
     Component.DesktopOnly(Component.Explorer()),
+    Component.MobileOnly(Component.Map()),
   ],
   right: [],
 }
