@@ -23,7 +23,9 @@ export const defaultContentPageLayout: PageLayout = {
     Component.ContentMeta(),
     Component.TagList(),
     Component.OnlyFor({titles: [mapTitle]}, Component.Explorer()),
+    Component.OnlyFor({titles: [mapTitle]}, Component.RecentNotes({limit: 6})),
     Component.MobileOnly(Component.TableOfContents()),
+    
   ],
   left: [
     Component.PageTitle(),
@@ -36,6 +38,7 @@ export const defaultContentPageLayout: PageLayout = {
   right: [
     Component.Backlinks(),
     Component.DesktopOnly(Component.TableOfContents()),
+    Component.RecentNotes(),
     Component.Graph(),
   ],
 }
