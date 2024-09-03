@@ -31,6 +31,7 @@ ignorePatterns: ["private", "templates", ".obsidian", "(!documentation)"],
 ```
 - the same has to be done to `.gitignore` as well
 	- to escape special characters use `\`
+
 To get the explorer to show up on mobile there are special workarounds.
 - the explorer will  show up on `index` or the title named `Digital Garden` as content and on both mobile and desktop view
 - In mobile view, there is a button on the top right that links to the index page
@@ -93,6 +94,7 @@ Update to Github with commit
 npx quartz sync -m "commit message"
 ```
 Refer to [obsidian-shell](obsidian-shell.md) for powershell workflows
+[Github Pages](https://quartz.jzhao.xyz/hosting#github-pages)
 
 Command to add to obsidian shell
 ```powershell
