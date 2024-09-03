@@ -15,7 +15,7 @@ concurrency:
   cancel-in-progress: false
  
 jobs:
-  build:
+  build-and-upload:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4
@@ -32,9 +32,28 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: public
- 
+
+      - name: Initialize the ssh-agent # configure ssh private key
+        uses: webfactory/ssh-agent@v0.4.1
+        with:
+          ssh-private-key: ${{ secrets.ORACLE_ARM_X_KEY }}
+
+  # SSH keyscan to avoid error
+      - name: Scan the host key
+        run: mkdir -p ~/.ssh/ && ssh-keyscan -H $DEPLOY_SERVER >> ~/.ssh/known_hosts
+        env:
+          DEPLOY_SERVER: ${{ secrets.ORACLE_ARM_X_IP }}
+
+  # Runs the rsync command to the remote site (caddy reverse proxy)
+      - name: Deploy the website
+        run: >-
+            rsync -avx --delete --exclude '.ssh' --exclude '.git' public/ $DEPLOY_USERNAME@$DEPLOY_SERVER:./docker/caddy/www
+        env:
+          DEPLOY_SERVER: ${{ secrets.ORACLE_ARM_X_IP }}
+          DEPLOY_USERNAME: ubuntu
+
   deploy:
-    needs: build
+    needs: build-and-upload
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
