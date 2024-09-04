@@ -10,16 +10,19 @@ Doesn't work with attachment and links unless it's wikilink format.
 
 ## Quartz (best option so far)
 > [!bug]+ Problems with Quartz
-> Explorer require workarounds.
+> Explorer require [workarounds](https://github.com/vttc08/obsidian-notes/commit/01f24fbf5da58b2b40724f4cfe121685a9d2acd9).
+> Recent Notes feature provide incorrect result.
 > Line breaks doesn't work. around lists. Same problem as [mkdocs](../!documentation/mkdocs.md#mkdocs) (Must use `Enter` twice in order for it to showup in Quartz as paragraph with space)
 >  - The standard line break can be fixed with [HardLineBreaks](https://quartz.jzhao.xyz/plugins/HardLineBreaks) plugin but when transition between list and paragraph, it will not work
 >  
-> `npx` problem cannot be terminated hence not useable with [obsidian-shell](obsidian-shell.md)
+> ~~`npx` problem cannot be terminated hence not useable with [obsidian-shell](obsidian-shell.md)~~ 
+> Can use a obsidian shell command to start/stop the server manually, but since `npx` is ongoing process it may require more work to open the browser afterward.
+> 
 
 ### Setup
 https://quartz.jzhao.xyz/
 Install Node and npm of the correct version
-```node
+```js
 npm install
 npx quartz create
 ```
@@ -93,10 +96,10 @@ Following the basic syntax at [caddy](../!documentation/Docker%20Apps/Web/caddy.
 - the `try_files` is necessary to handle the static files otherwise 404 occurs
 ### Integrating with Obsidian
 After making change in native Obsidian
-~~- Live preview if applicable~~ (Live preview is impossible because [obsidian-shell](obsidian-shell.md) cannot terminate `npx`)
+- Live preview if applicable ~~(Live preview is impossible because [obsidian-shell](obsidian-shell.md) cannot terminate `npx`)~~
 - Copy generated html to home server (powershell script)
 - Update git repo and [Github actions](https://quartz.jzhao.xyz/hosting#github-pages)
-~~Dev server for preview on `localhost:8080`~~
+Dev server for preview on `localhost:8080`, after preview, the server needs to be terminated manually
 ```javascript
 npx quartz build --serve -d ..\..\VSCode\notes\
 ```
@@ -122,4 +125,19 @@ if (${{_github}}) {
   npx quartz sync -m "${{_commit}}"
   echo "Published to github."
 } else { echo "Process is done." }
+```
+Another command to start/stop live preview server.
+```powershell
+sleep 0.5
+$dg = [Environment]::GetFolderPath("MyDocuments") + "\Projects\obsidian-publish"
+cd $dg
+
+function bg() {start @args}
+if (${{_dev}}) { 
+  npx quartz build --serve -d ..\..\VSCode\notes\  
+  bg "http://localhost:8080"
+} else { 
+  $processPID =  $($(netstat -aon | findstr "8080")[0] -split '\s+')[-1]
+  taskkill /f /pid $processPID
+}
 ```
