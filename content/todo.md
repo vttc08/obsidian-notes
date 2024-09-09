@@ -4,14 +4,13 @@
 - [ ] minimum viable product
 - [ ] authelia with [filebrowser](!documentation/Docker%20Apps/filebrowser.md)
 - [ ] authelia with app of no-auth (eg. arrs, VNC)
+- [ ] authelia for websocket
 - [ ] authelia with subpath
 - [ ] with apps of OIDC (eg. portainer, [audiobookshelf](!documentation/Docker%20Apps/Media%20Apps/audiobookshelf.md))
 - [ ] document existing apps
 - [ ] IaC proof with environments/secrets, automation
 
 - [ ] GhostCMS VPS
-- [ ] Gamestreaming
-- [ ] obsidian publish alternative
 - [ ] Website archiving
 - [ ] Sponsorblock API Mirror
 - [ ] Sponsorblock using AI
@@ -34,6 +33,7 @@
 - [ ] Photoprism Self-Built
 - [ ] immich with hwaccel
 - [ ] nextcloud with hwaccel
+- [ ] Advanced Gamestreaming
 - [ ] Benhelp homepages for Oracle Cloud (nzbget, radarr)
 - [ ] librespeedtest
 - [ ] scrutiny hdd
@@ -76,6 +76,8 @@
 - [x] linuxserver duckdns add dynu support [linuxserver-duckdns]
 - [x] avidemux with audio (jlesage also support it)
 - [x] jellystat
+- [x] Obsidian webtop
+- [x] Gamestreaming
 
 ~~[obsidian-mkdocs]~~
 - [x] install and configure demo mkdocs material
