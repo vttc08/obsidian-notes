@@ -11,10 +11,8 @@
 - [ ] IaC proof with environments/secrets, automation
 
 - [ ] GhostCMS VPS
-- [ ] Website archiving
 - [ ] Sponsorblock API Mirror
 - [ ] Sponsorblock using AI
-- [ ] Document Invidious setup
 - [ ] apprise notification
 - [ ] mailrise
 - [ ] autokuma
@@ -27,6 +25,7 @@
 - [ ] awesome jellyfin
 - [ ] muer (CasaOS) music server and other CasaOS apps
 - [ ] Apache Guacamole
+- [ ] Document Invidious setup (when it works again)
 - [ ] Music server with deemix + popular songs using d-fi
 - [ ] Mealie or Tandoor
 - [ ] Fixing tesla homepage
@@ -78,6 +77,7 @@
 - [x] jellystat
 - [x] Obsidian webtop
 - [x] Gamestreaming
+- [x] Website archiving
 
 ~~[obsidian-mkdocs]~~
 - [x] install and configure demo mkdocs material
