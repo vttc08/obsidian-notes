@@ -12,6 +12,12 @@ Set-PSReadlineKeyHandler -Key ctrl+d -Function ViExit
 ```
 - these will make terminal window exit on ctrl-d
 Ensure the scripts folder are located at `$HOME\scripts`
+- the scripts in these folder are quick scripts also used in task scheduler
+- the folder contains the `.ps1` files as well as `.xml` file which is used for importing tasks in the scheduler
+The scripts in that folder can also be added in powershell alias
+```powershell
+new-alias the-alias $env:USERPROFILE/scripts/thescript.ps1
+```
 #### Google Chrome
 #### Extensions
 **[Wayback Machine](https://chromewebstore.google.com/detail/wayback-machine/fpnmgdkabkmnadcjpehmlllkndpkmiak)**

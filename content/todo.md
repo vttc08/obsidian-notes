@@ -10,7 +10,6 @@
 - [ ] document existing apps
 - [ ] IaC proof with environments/secrets, automation
 
-- [ ] GhostCMS VPS
 - [ ] Sponsorblock API Mirror
 - [ ] Sponsorblock using AI
 - [ ] apprise notification
@@ -21,18 +20,21 @@
 - [ ] reactive resume
 - [ ] Minecraft discord bot
 - [ ] Minecraft autoshutdown
+- [ ] Minecraft management method (proxmox or headscale)
 - [ ] jellyfin intro skipper
 - [ ] awesome jellyfin
 - [ ] muer (CasaOS) music server and other CasaOS apps
 - [ ] Apache Guacamole
 - [ ] Document Invidious setup (when it works again)
 - [ ] Music server with deemix + popular songs using d-fi
+- [ ] git sync and selfhosted git
 - [ ] Mealie or Tandoor
 - [ ] Fixing tesla homepage
 - [ ] Photoprism Self-Built
 - [ ] immich with hwaccel
 - [ ] nextcloud with hwaccel
 - [ ] Advanced Gamestreaming
+- [ ] Advanced Ghost CMS
 - [ ] Benhelp homepages for Oracle Cloud (nzbget, radarr)
 - [ ] librespeedtest
 - [ ] scrutiny hdd
@@ -58,6 +60,7 @@
 - [ ] multi-scrobbler/majola
 - [ ] yt-dlp
 - [ ] Video/Image upscaling
+- [x] GhostCMS VPS
 - [x] VPS setup (document caddy, networks, tools, firewall, ddns)
 - [x] fireshare workflow
 - [x] ssh client config file
