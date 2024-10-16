@@ -1,19 +1,9 @@
-[authelia-ldap](homeserver/authelia-ldap.md)
-- [ ] setup authelia and lldap
-- [ ] create users and groups in LDAP
-- [ ] minimum viable product
-- [ ] authelia with [filebrowser](!documentation/Docker%20Apps/filebrowser.md)
-- [ ] authelia with app of no-auth (eg. arrs, VNC)
-- [ ] authelia for websocket
-- [ ] authelia with subpath
-- [ ] with apps of OIDC (eg. portainer, [audiobookshelf](!documentation/Docker%20Apps/Media%20Apps/audiobookshelf.md))
-- [ ] document existing apps
-- [ ] IaC proof with environments/secrets, automation
-
 - [ ] Sponsorblock API Mirror
 - [ ] Sponsorblock using AI
 - [ ] apprise notification
 - [ ] mailrise
+- [ ] ffsubsync and zht2s
+- [ ] Jellyfin AMD transcoding project
 - [ ] autokuma
 - [ ] DIUN docker update
 - [ ] Lazytainer/ContainerNursery to sleep docker
@@ -48,7 +38,6 @@
 - [ ] paperless ngx
 - [ ] rustdesk
 - [ ] subcleaner integration
-- [ ] ffsubsync and zht2s
 - [ ] changedetection
 - [ ] arr integration
 - [ ] LunaSea app
@@ -60,6 +49,9 @@
 - [ ] multi-scrobbler/majola
 - [ ] yt-dlp
 - [ ] Video/Image upscaling
+- [ ] Traefix
+- [ ] Authelia/lldap multi-server, 
+- [x] [authelia-ldap](homeserver/authelia-ldap.md)
 - [x] GhostCMS VPS
 - [x] VPS setup (document caddy, networks, tools, firewall, ddns)
 - [x] fireshare workflow
@@ -131,3 +123,16 @@
 - [x] subpath support
 - [x] authelia support
 - [x] document the setup
+
+Programming Projects Todo
+- [ ] Mockup weebly portfolio
+- [ ] Ghost CMS Site
+- [ ] Powershell Windows Setup (similar to CTT)
+- [ ] Powershell App Installer/Configurator
+- [ ] Home Theatre Online Troubleshooter
+- [ ] Python/Powershell cracked app support
+- [ ] Jellyfin to Local Player (Windows HTPC backend)
+- [ ] Alternative Jellyfin Frontend
+- [ ] Custom Home Assistant Integration practice
+- [ ] Kodi Addon practice
+- [ ] Window Native Controller App for Gamestreaming

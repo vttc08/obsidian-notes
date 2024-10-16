@@ -6,6 +6,8 @@ Images have many [attributes](html-attributes.md)
 - `src` where the image is located
 - `alt` text to display for the image when the image doesn't show
 - `height` and `width` doesn't change the size of the image but change show it's displayed
+	- it's good idea to always include it so browser will reserve space for it
+	- setting the `width` or `max-width` to 100% is good idea to ensure the image is scaled to fit all screens 
 Web support `svg, gif, jpg, png`
 
 HTML `srcset` and `size` attribute allows different images to be shown based on screen width.
@@ -41,6 +43,7 @@ Use `source` element to specify list of images
 - if `controls` is provided then the audio player will have controls when playing the file
 - `loop`, make the audio file loop continuously
 - `autoplay` will play the audio as soon as page loads
+- `muted` used with autoplay, it will automatically play the media muted
 Audio can also have `source` nested in it for providing multiple audio files of different format
 
 **Video**
@@ -54,3 +57,29 @@ Same principle as audio, allows for `source` for multiple formats
 ```
 
 **iframe embed**
+Can be used to embed other content from other webpages eg. a YouTube video
+```html
+<iframe src="" title=""></iframe>
+```
+
+[**Image Map**](https://www.w3schools.com/html/html_images_imagemap.asp)
+Make some elements of an image clickable
+```html
+<map name="mymap">
+<area shape="rect" coords="x,y,x,y" href="link.html">
+</map>
+<img src="image.png" usemap="#mymap">
+```
+- the shapes can be rectangle, circle or polygon
+- for rectangle shape, the coordinate start with the x,y coordinate of the top-left and the x,y coordinate of the bottom-right
+- the `usemap` attributed is used on `img`
+
+**Background Image**
+```html
+<p style="backround-image: url('image.jpg');"> What is this image. </p>
+```
+By default, the background image will tile to the size of the content.
+```css
+background-size: cover; background-repeat: no-repeat;
+```
+This style will make the image cover the width of the content but not repeat.

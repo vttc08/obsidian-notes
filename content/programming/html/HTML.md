@@ -1,3 +1,5 @@
+https://developer.mozilla.org/en-US/docs/Web/HTML
+
 Tags
 ```html
 <p>This is a paragaph.</p>
@@ -18,6 +20,27 @@ DOM (Document Object Model)
 ==Inline== tags that wrap around other words, eg. italic, bold, quote
 ==Block Level== tags that is entire block, eg. blockquote, headings
 
+**HTML File**
+Each HTML file must have a `doctype` declaration
+```html
+<!doctype html>
+```
+All the HTML content is enclosed in `html` element
+```html
+<html lang="en-US" dir="ltr"></html>
+```
+- that element can also have attributes that indicate the language and direction
+
+**head body** (header and body element)
+```html
+<head></head>
+<body></body>
+```
+The head is about the metadata and won't be displayed on the page.
+Body is for the content which will be displayed on page.
+More information about html [head](html-head.md)
+More information about html [body](html-body.md)
+
 **Paragraph**
 ```html
 <p> </p>
@@ -35,19 +58,29 @@ The headlines consists of 6 sizes from h1 to h6. Similar to markdown `#`
 ```html
 <i> </i>  <!-- Italic -->
 <b> </b> <!-- Bold -->
+<u> </u> <!-- Underline -->
+<mark></mark> <!-- Highlighted -->
+<del></del> <!-- Strikethrough -->
 ```
 - it the closing tag is not used, everything after the starting tag will have the styles applied
 - you can also use `<em>` and `<strong>` but sometimes these render the same as `<b>`
+![](assets/Pasted%20image%2020241008230700.png)
 
 **Lists**
+Lists starts with `<ul>` or `<ol>` and each individual items in a list are `<li>`
 ```html
-<li></li> <!-- List item -->
+<ul>  <li></li> </ul> <!-- List item -->
 ```
 ![](assets/Pasted%20image%2020240917220254.png)
 Unordered List `<ul>`
 - group of list items that is not sorted
 Ordered List `<ol>`
+```html
+<ol start="10" type="A">  <li>List</li>  </ol>
+```
 - group of list item that can be counted like 123
+- ordered list have `type` attribute with support for numbers, letters, Roman numerals
+- the `start` attribute will start list counting from another number
 Definition List `<dl>`
 ```html
 <dl>
@@ -56,6 +89,7 @@ Definition List `<dl>`
 ```
 ![](assets/Pasted%20image%2020240917220519.png)
 - definition lists start as `<dl>` and it can contain list of dictionaries with a term and its definition
+Lists can be nested within a list (eg. list in a list)
 
 **Quotes**
 ```html
@@ -63,6 +97,7 @@ Definition List `<dl>`
 <q>inline quote</q>
 ```
 Add quotation to entire some text in a paragraph or entire block of text.
+![](assets/Pasted%20image%2020241008230830.png)
 
 **Time**
 ```html
@@ -80,13 +115,25 @@ Code can also be used to represent HTML entities so it doesn't get rendered as H
 - `<` = `%lt;`
 - `>` = `%gt;`
 - `&` = `&amp;`
+[List of many HTML entities](https://www.w3schools.com/html/html_entities.asp)
+[Symbols](https://www.w3schools.com/html/html_symbols.asp)
+[Emojis](https://www.w3schools.com/html/html_emojis.asp)
 
-**Line Break**
+
+**Smalltext**
+![](assets/Pasted%20image%2020240917223019.png)
+```html
+<small></small>
+```
+Text that are smaller, good for copyright information or fine print.
+
+**Break**
 ![](assets/Pasted%20image%2020240917222403.png)
 ```html
 <br>
+<hr>
 ```
-Line break add a new line to the end of the text, it doesn't need a closing tag.
+`br` add spacer in between content, while `hr` is also a break but add a line in between the break.
 
 **Pre**
 ![](assets/Pasted%20image%2020240917222631.png)
@@ -102,19 +149,18 @@ Pre stands for already formatted text, everything in the pre will have the spaci
 ```
 Subscripts and superscripts, eg. math and chemistry formulas and foornotes.
 
-**Smalltext**
-![](assets/Pasted%20image%2020240917223019.png)
-```html
-<small></small>
-```
-Text that are smaller, good for copyright information or fine print.
-
 **None Breaking Space**
 ![](assets/Pasted%20image%2020240918214339.png)
 ```html
 This is some&nbsp;text.
 ```
 Add `&nbsp;` between some texts and these will not break even where other characters will be on a new line.
+
+**Button**
+```html
+<button>Button Text</button>
+```
+![](assets/Pasted%20image%2020241007231507.png)
 
 **Navbar**
 ```html
@@ -125,3 +171,20 @@ Add `&nbsp;` between some texts and these will not break even where other charac
 </nav>
 ```
 Element that is used for website navigation. Consists of an unordered list of links.
+
+**Div**
+```html
+<div></div>
+```
+Generic block level element, captures everything inside the div in its block.
+Div can be centered
+```css
+div {width: 100px; margin:auto;}
+```
+
+**span**
+```html
+<span>
+```
+Generic inline element.
+Both div and span can be targeted via CSS.
