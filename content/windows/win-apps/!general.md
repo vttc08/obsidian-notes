@@ -9,8 +9,10 @@ nano $profile
 Add these lines into PowerShell profile
 ``` powershell
 Set-PSReadlineKeyHandler -Key ctrl+d -Function ViExit
+Set-Alias which where.exe
 ```
 - these will make terminal window exit on ctrl-d
+- use the `which` command as if on Linux
 Ensure the scripts folder are located at `$HOME\scripts`
 - the scripts in these folder are quick scripts also used in task scheduler
 - the folder contains the `.ps1` files as well as `.xml` file which is used for importing tasks in the scheduler

@@ -45,3 +45,7 @@ Edit the configuration options at `/etc/defaults/hd-idle`
 	- try using `hd-idle -t disk-name`, if there is an error such as `No such devices /dev//dev/xxx` then add the disk name without the `/dev`
 - `-i` sets the spindown time in seconds for the device to be spun down in `-a`
 - `-l` set the log location, hd-idle will write to log every time a disk spinup
+Check whether HDD's are really spun down
+```shell
+watch 'for i in b c d; do sudo smartctl -i -n standby /dev/sd$i | grep -Ei "power|model"; done'
+```

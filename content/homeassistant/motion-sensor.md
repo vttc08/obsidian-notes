@@ -5,7 +5,7 @@ Using Tasmota and MQTT
 ```json
 {"ZbReceived":{"0x6841":{"Device":"0x6841","0500?00":"000000000000","ZoneStatusChange":0,"Occupancy":0,"Endpoint":1,"LinkQuality":105}}}
 ```
-The `Occupancy` is used for presence detection.
+The `Occupancy` is used for motion detection.
 
 ```yaml
 - binary_sensor:

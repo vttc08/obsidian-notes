@@ -28,9 +28,8 @@ _dlog_autocomplete() {
     COMPREPLY=($(compgen -W "$(docker ps -a --format '{{.Names}}')" -- "$cur"))
 }
 
-complete -F _dl_autocomplete dlog
+complete -F _dlog_autocomplete dlog
 ```
-
 
 Use `docker inspect | jq .[].Keys` to parse the json data of a given container
 - `.[].HostConfig` general configuration of container

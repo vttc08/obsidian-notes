@@ -1,10 +1,16 @@
-- [ ] Sponsorblock API Mirror
 - [ ] Sponsorblock using AI
+- [ ] Training sponsorblock
+- [ ] ProjectIvy Launcher
+- [ ] fix home assistant log spam
+- [ ] AVR/Android Box/adb/TV automation
+- [ ] IPTV
+- [ ] AriaNG
 - [ ] apprise notification
 - [ ] mailrise
-- [ ] ffsubsync and zht2s
 - [ ] Jellyfin AMD transcoding project
+- [ ] Learn Home Assistant in depth
 - [ ] autokuma
+- [ ] ytdl-sub/MeTube
 - [ ] DIUN docker update
 - [ ] Lazytainer/ContainerNursery to sleep docker
 - [ ] reactive resume
@@ -14,7 +20,8 @@
 - [ ] jellyfin intro skipper
 - [ ] awesome jellyfin
 - [ ] muer (CasaOS) music server and other CasaOS apps
-- [ ] Apache Guacamole
+- [ ] Apache Guacamole/Nexterm (sync it with ssh_config)
+- [ ] Meshcentral
 - [ ] Document Invidious setup (when it works again)
 - [ ] Music server with deemix + popular songs using d-fi
 - [ ] git sync and selfhosted git
@@ -73,6 +80,8 @@
 - [x] Obsidian webtop
 - [x] Gamestreaming
 - [x] Website archiving
+- [x] Sponsorblock API Mirror
+- [x] ffsubsync and zht2s
 
 ~~[obsidian-mkdocs]~~
 - [x] install and configure demo mkdocs material
@@ -127,12 +136,18 @@
 Programming Projects Todo
 - [ ] Mockup weebly portfolio
 - [ ] Ghost CMS Site
+- [ ] SponsorBlock AI Stack
+- [ ] SponsorBlock/RYD server
 - [ ] Powershell Windows Setup (similar to CTT)
 - [ ] Powershell App Installer/Configurator
 - [ ] Home Theatre Online Troubleshooter
+- [ ] Home Assistant Example Plugin
+- [ ] Home Assistant Dashboard
 - [ ] Python/Powershell cracked app support
 - [ ] Jellyfin to Local Player (Windows HTPC backend)
 - [ ] Alternative Jellyfin Frontend
 - [ ] Custom Home Assistant Integration practice
 - [ ] Kodi Addon practice
 - [ ] Window Native Controller App for Gamestreaming
+- [ ] Sleep/Wake Up AI Apps
+- [ ] Demucs karaoke

@@ -13,6 +13,18 @@ After a rebase, force push to github to avoid errors
 `git pull` update the files from github with the commits
 On github, there is options to set website, description and tags.
 
+### Github SSH Auth
+Setting up SSH is same as [ssh server key](../!documentation/Linux%20Server/debian-based-server-setup.md#^7003a1)
+Generate a key using `ssh-keygen`, copy the content of the `.pub` and [upload it to Github](https://github.com/settings/ssh/new)
+On Linux configure ssh config file
+```
+Host github.com
+  User git
+  Hostname github.com
+  PreferredAuthentications publickey
+  IdentityFile github.key
+```
+
 **Branches**
 The default branch in github is `master`, any new branches through Github pull request would be based on master branch. This can be changed.
 - go to Settings -> General -> Default Branch
@@ -30,29 +42,6 @@ The default branch in github is `master`, any new branches through Github pull r
 **Github Flow**
 We have a main branch, and everytime need change, make a feature branch and commit to that branch. When it's time to merge into main branch, make a pull request. Once approved, it will be merged and to resolve any conflicts, then the feature branch can be deleted.
 
-**Markdown**
-```md
-# Headline
-# (up to 6 #)
-> quotation
-*italic* **bold**
-*** -> make a line spacer
-~~strikethrough~~
-- item 1
-- item 2
-* item 3
-	- with indent
-[Link Text](link_url)
-![Image reference](image_url)
-`insert code here` - use 3 quotation for longer code
-Footnote[^1]
-[^1] references text/url
-| Table | Table 2 | Table 3 |
-| ----- | ------- | ------- |
-| text  | text 2  | text 3  |
-:--: centered, --: right aligh, default is left
-
-```
 **Repo Files**
 Readme file - what the repo does, the homepage
 -  in the main folder, `roots, docs, .github`

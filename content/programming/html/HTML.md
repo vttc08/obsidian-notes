@@ -17,6 +17,7 @@ DOM (Document Object Model)
 - hierarchy and structure of HTML (like a tree)
 
 **Inline vs Block-Level**
+[Inline and block have different response when CSS is applied](../css/css-box-model.md#^402f91)
 ==Inline== tags that wrap around other words, eg. italic, bold, quote
 ==Block Level== tags that is entire block, eg. blockquote, headings
 

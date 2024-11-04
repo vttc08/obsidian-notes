@@ -23,4 +23,21 @@ When FreeTube upstream changes
 git fetch origin # fetch changes from remote repo
 git rebase development
 ```
-- merge changes if nessecary
+- merge changes if necessary
+
+## Subcleaner
+Refer to [git-submodule](git-submodule.md)
+Fork the official [subcleaner](https://github.com/KBlixt/subcleaner)
+In the movie-renamer project, add the submodule
+```sh
+git submodule add https://github.com/vttc08/subcleaner-submodule
+```
+In the added submodule repo, add the upstream (has to do it on every computer)
+```sh
+git remote add upstream https://github.com/KBlixt/subcleaner
+```
+- whenever the upstream made changes (assuming changes pushed to master)
+```sh
+git fetch upstream
+git merge upstream/master
+```
