@@ -30,7 +30,6 @@ Grace,Chennai,9,150,50.1
 
 ```
 
-
 ```python
 # read csv file
 import pandas as pd
@@ -38,14 +37,10 @@ import pandas as pd
 df = pd.read_csv('file.csv')
 ```
 
-
 ```python
 # access a column of data
 df['city'].head() # head is used to display the first 5 rows
 ```
-
-
-
 
     0    Kolkata
     1      Delhi
@@ -54,16 +49,10 @@ df['city'].head() # head is used to display the first 5 rows
     4    Kolkata
     Name: city, dtype: object
 
-
-
-
 ```python
 # access multiple column of data
 df[['name', 'city']].head()
 ```
-
-
-
 
 <div>
 <style scoped>
@@ -117,20 +106,14 @@ df[['name', 'city']].head()
 </table>
 </div>
 
-
-
 **iloc vs loc**
 - iloc is used to access rows and columns by integer index -eg. 0
 - loc is used to access rows and columns by label -eg. city
-
 
 ```python
 # access a row of data
 df.iloc[0] # access the first row
 ```
-
-
-
 
     name                  John
     city               Kolkata
@@ -139,16 +122,10 @@ df.iloc[0] # access the first row
     weight(kg)            72.2
     Name: 0, dtype: object
 
-
-
-
 ```python
 # Access multiple rows
 df.iloc[0:2] # access the first 5 rows
 ```
-
-
-
 
 <div>
 <style scoped>
@@ -196,29 +173,17 @@ df.iloc[0:2] # access the first 5 rows
 </table>
 </div>
 
-
-
-
 ```python
 # Access a specific cell
 df.loc[0, 'city'] # the city of the first row
 ```
 
-
-
-
     'Kolkata'
-
-
-
 
 ```python
 # Access multiple cells
 df.loc[0:2, ['name', 'city']] # the name and city of the first 3 rows
 ```
-
-
-
 
 <div>
 <style scoped>
@@ -262,18 +227,12 @@ df.loc[0:2, ['name', 'city']] # the name and city of the first 3 rows
 </table>
 </div>
 
-
-
-
 ```python
 # Select rows based on a condition
 new_df = df[df['height(cm)'] > 155].head() # select rows where age is greater than 25
 new_df_2 = df[df['city']=='Kolkata'].head() # select rows where city is Kolkata
 new_df, new_df_2
 ```
-
-
-
 
     (      name     city  happiness(0-10)  height(cm)  weight(kg)
      0     John  Kolkata                7         182        72.2
@@ -288,18 +247,12 @@ new_df, new_df_2
      12     Zoe  Kolkata                7         177        70.8
      16    Emma  Kolkata                7         181        72.7)
 
-
-
-
 ```python
 # select row based on multiple conditions
 new_df_3 = df[(df['height(cm)'] >= 155) & (df['height(cm)'] < 175)].head() # selecting a value between 2 numbers is considered as a multiple condition
 new_df_4 = df[(df['city']=='Kolkata') | (df['city']=='Mumbai')].head() # using the or operator
 new_df_3, new_df_4
 ```
-
-
-
 
     (      name     city  happiness(0-10)  height(cm)  weight(kg)
      1  Michael    Delhi                6         168        65.8
@@ -314,30 +267,18 @@ new_df_3, new_df_4
      6  Olivia   Mumbai                8         158        61.7
      8  Sophia  Kolkata                7         183        73.5)
 
-
-
-
 ```python
 # get the unique values of a column
 df['city'].unique()
 ```
 
-
-
-
     array(['Kolkata', 'Delhi', 'Mumbai', 'Chennai'], dtype=object)
-
-
-
 
 ```python
 # 2d dataframe array can be converted into a python dictionary
 dict(df.head())
 dict(df.head())['name']
 ```
-
-
-
 
     0       John
     1    Michael
@@ -346,9 +287,6 @@ dict(df.head())['name']
     4     Daniel
     Name: name, dtype: object
 
-
-
-
 ```python
 # 1d dataframe array (eg. a column, row) can be converted into a python list or a dictionary
 list(df['name'].head()) # column list
@@ -356,13 +294,9 @@ list(df.iloc[0]) # row list
 dict(df.iloc[0])
 ```
 
-
-
-
     {'name': 'John',
      'city': 'Kolkata',
      'happiness(0-10)': 7,
      'height(cm)': 182,
      'weight(kg)': 72.2}
-
 

@@ -115,7 +115,7 @@ sleep 0.5
 $dg = [Environment]::GetFolderPath("MyDocuments") + "\Projects\obsidian-publish"
 function cpy{
   param ($src, $dest, $opt)
-  robocopy $src $dest /E /NDL /NJH $opt
+  robocopy $src $dest /E /NDL /NJH /XF *.py *.ipynb $opt
 }
 cpy . "$dg\content"
 cd $dg
@@ -126,6 +126,7 @@ if (${{_github}}) {
   echo "Published to github."
 } else { echo "Process is done." }
 ```
+- the command has been updated to ignore non-markdown files such as python notebooks
 Another command to start/stop live preview server.
 ```powershell
 sleep 0.5

@@ -80,3 +80,12 @@ reg delete "HKLM\Software\Policies\Microsoft\Edge" /f
 Most of the configuration will be synced if logging in via Microsoft account with exception of SSH settings.
 SSH settings on stored in Windows at `C:\Users\hubcc\.ssh\config`, these settings are global
 Once syncthing is setup, run the powershell script located in `Documents\ssh\ssh_config\configure.ps1` to restore SSH configs
+
+#### Internet Download Manager
+Make registry edit to prevent auto-update
+```powershell
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\DownloadManager]
+"LstCheck"="01/08/99"
+```

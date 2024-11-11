@@ -29,7 +29,6 @@ William,Mumbai,8,160,60.45
 Grace,Chennai,9,150,50.45
 ```
 
-
 ```python
 # read csv file
 import pandas as pd
@@ -37,14 +36,10 @@ import pandas as pd
 df = pd.read_csv('file.csv')
 ```
 
-
 ```python
 # describe the data
 df.describe() # this will describe statistic of all columns with numeric data
 ```
-
-
-
 
 <div>
 <style scoped>
@@ -122,9 +117,6 @@ df.describe() # this will describe statistic of all columns with numeric data
 </table>
 </div>
 
-
-
-
 ```python
 result = df.describe()
 dict(result)['happiness(0-10)']['std'] # descriptive statistics of columns can be converted as a dict to access its values
@@ -132,13 +124,7 @@ dict(result)['happiness(0-10)']['std'] # descriptive statistics of columns can b
 df['happiness(0-10)'].mean()
 ```
 
-
-
-
     7.5
-
-
-
 
 ```python
 df['happiness(0-10)'].mean()
@@ -149,19 +135,13 @@ df['city'].mode() # return most frequent values as a list, use mode()[0] to most
 # min, max, sum, mean, median, std, var, quantile, mode
 ```
 
-
-
-
     0    Chennai
     1      Delhi
     2    Kolkata
     3     Mumbai
     Name: city, dtype: object
 
-
-
 ## Some Examples
-
 
 ```python
 # get average height of people living in both Mumbai and Kolkata
@@ -174,11 +154,13 @@ df[(df['city'] == 'Mumbai') | (df['city'] == 'Kolkata')]['height(cm)'].mean()
 # the average height of people living in Chennai with weight above 64kg in 2 decimal places
 df[(df['city'] == 'Chennai') & (df['weight(kg)'] < 64)]['height(cm)'].mean().round(2)
 ```
+
     150.83
+
 ```python
 # get the mean and stdev of happiness of people living in Mumbai
 df[df['city'] == 'Mumbai']['happiness(0-10)'].mean(), df[df['city'] == 'Mumbai']['happiness(0-10)'].std()
 ```
-    (8.0, 0.0)
 
+    (8.0, 0.0)
 

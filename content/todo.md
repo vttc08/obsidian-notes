@@ -1,7 +1,3 @@
-- [ ] Sponsorblock using AI
-- [ ] Training sponsorblock
-- [ ] ProjectIvy Launcher
-- [ ] fix home assistant log spam
 - [ ] AVR/Android Box/adb/TV automation
 - [ ] IPTV
 - [ ] AriaNG
@@ -58,6 +54,7 @@
 - [ ] Video/Image upscaling
 - [ ] Traefix
 - [ ] Authelia/lldap multi-server, 
+- [ ] Training sponsorblock
 - [x] [authelia-ldap](homeserver/authelia-ldap.md)
 - [x] GhostCMS VPS
 - [x] VPS setup (document caddy, networks, tools, firewall, ddns)
@@ -82,6 +79,10 @@
 - [x] Website archiving
 - [x] Sponsorblock API Mirror
 - [x] ffsubsync and zht2s
+- [x] Sponsorblock using AI
+- [x] ProjectIvy Launcher
+- [x] fix home assistant log spam
+
 
 ~~[obsidian-mkdocs]~~
 - [x] install and configure demo mkdocs material

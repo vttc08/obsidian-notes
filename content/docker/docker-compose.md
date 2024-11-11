@@ -82,7 +82,7 @@ networks:
 ```
 - the `environment` can be set as a list `X=y` or a dictionary `X: 2`
 - it can also consist of shell variables with `${}` syntax
-	- `${:-}` default value if such variable is unset, similar to [bash variable](../bash/6.%20Case%20Statements%20&%20Arguments.md#^ccaace)
+	- `${:-}` default value if such variable is unset, similar to [bash-variables](../bash/bash-other-variables.md)
 - environment variables will take precedence over [env_file](#^96654c)
 Command substitution such as `$(id -u)` does not work, consider using system variables
 ##### env_file
@@ -94,7 +94,15 @@ Command substitution such as `$(id -u)` does not work, consider using system var
 - using `env_file` key, the files are provided at list
 - the file's location can be given as relative position or in another folder
 - the file that is defined first will take precedence if duplicate arise
-
+##### Long Strings
+For multiline strings use `|` and for single line strings use `>`
+```yaml
+multiline: |
+	this should be multiple lines
+singleline: >
+	this is all in one line
+```
+The strings has to be indented correctly.
 ### Interactive
 ```yaml
     stdin_open: true

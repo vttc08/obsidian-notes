@@ -23,7 +23,9 @@ ENTRYPOINT ["./entrypoint.sh"] # what the command container should run when star
 ```
 `COPY` copy file from host directory to container
 `CMD` translate to entry point that runs after container starts, <font color=DC143C>the CMD argument has to be in double quotes.</font>
-
+`ENTRYPOINT` is what the container will run as when exec
+- by default, the entrypoint is `/bin/sh -c` so with `docker exec container python app.py` the command run in the container will be `/bin/sh -c python app.py`
+- when entrypoint is set as `python` then executing the same command adobe will not work and for the same as above the exec command is now `docker exec container app.py`
 ### Multi-arch Build
 ```bash
 docker buildx build --platform linux/arm64 . -t caddytest

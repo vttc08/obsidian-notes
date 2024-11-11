@@ -1,14 +1,20 @@
-Tqdm Progress Bar
+## Pytest
 
-```python
-from tqdm import tqdm, trange
-import time
+```shell
+pip install pytest
 ```
 
 ```python
-for _ in tqdm(range(100)):
-    time.sleep(0.01)
-    pass
+import subprocess
+proc = subprocess.run(["notepad"], shell=True, capture_output=True)
+print(proc.stdout)
+```
+
+    None
+
+```python
+def myfunc():
+    return
 ```
 
     100%|██████████| 100/100 [00:01<00:00, 63.43it/s]
