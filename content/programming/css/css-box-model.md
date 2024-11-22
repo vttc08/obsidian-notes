@@ -7,13 +7,21 @@ p {
 	padding: 10px;
 }
 ```
-- one value specifiy same padding all around
+- one value specify same padding all around
 - two value: first is top/bottom, second is left/right
 - 4 values: clockwise order; top, right, bottom, left
 
 **Margin**
 Spaces around the element outside borders
-
+- margins can be negative such that elements overlap
+Margins have `auto` which allow elements to be centered
+```css
+h1 {
+  margin: auto;
+}
+```
+![](assets/Pasted%20image%2020241113223040.png)
+- however, it will not align vertically
 **Borders**
 ```css
 a { border: 1px solid red; } /* Shorthand syntax */

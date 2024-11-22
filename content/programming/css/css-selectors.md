@@ -42,6 +42,10 @@ This CSS selection also allow for class
 .class p {}
 ```
 - style will only be applied paragraph in something with class `class`
+To select for a class that is nested in generic element, the syntax is different from above
+```css
+p.class {}
+```
 
 **Selector List**
 ```css

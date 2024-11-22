@@ -85,6 +85,12 @@ networks:
 	- `${:-}` default value if such variable is unset, similar to [bash-variables](../bash/bash-other-variables.md)
 - environment variables will take precedence over [env_file](#^96654c)
 Command substitution such as `$(id -u)` does not work, consider using system variables
+The commands also work from non-env keys
+```yaml
+	user: ${PUID:-1000}:${PGID:-1000}
+```
+- when starting the container it will run with PUID/PGID defined in shell variables
+- it's a good idea to export these in bashrc for seamless deployment
 ##### env_file
 ```yaml
     env_file:

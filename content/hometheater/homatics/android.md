@@ -33,36 +33,17 @@ When finished adb session use `adb disconnect`
 
 Download Jellyfin, Just Player via Google Play
 
-Go to adb shell via `adb shell` and use this to list all the package names
-```c
-pm list packages
-```
-```c
-pm uninstall -k --user 0 <package-name>
-```
-
-List of problematic apps
-```c
-com.google.android.youtube.tv
-com.google.android.youtube.tvmusic
-com.netflix.ninja
-com.amazon.amazonvideo.livingroom
-```
-
-Disable Default Launcher
-```c
-adb shell pm disable-user --user 0 com.google.android.tvlauncher
-```
-
-Disable Google Play Protect (untested), this is needed to install SmartTube and other Chinese apps
-```c
-adb shell settings put global package_verifier_user_consent -1
-```
+Install other packages
 Install other launcher/packages
 ```c
 adb install "path_to_android.apk"
 ```
 The install path can be on local directory or SMB share
+
+Detailed adb commands
+[adb-shell](adb-shell.md)
+
+
 
 To change launchers, use the app [Launcher Manager](https://xdaforums.com/t/app-firetv-noroot-launcher-manager-change-launcher-without-root.4176349/)
 
@@ -71,6 +52,9 @@ https://4pda.to/forum/index.php?showtopic=807930
 3.34 does not work, the latest version is 3.22
 Netflix button do not work in any apps.
 
+Add Chinese input
+- settings, keyboard, Gboard settings, Language
+- uncheck "use system language" and add Simplified Chinese
 ## Projectivy Launcher
 Go to Android's accessibility settings
 - Enable Projectivy Launcher

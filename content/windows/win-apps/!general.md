@@ -50,7 +50,7 @@ Version=2
 - There should only be 1 profile `profile0`, delete all other profiles
 - Under the `InstallXXX[Default]` and `Profile[Path]` it should reference to the profile name of the folder
 To create a new profile shortcut, find the location of Firefox shortcut, then edit its target to `-p ProfileName`
-
+Disable Auto Updates in `policies.json`
 
 **Policies**
 https://gist.github.com/vttc08/4b2dbf55157a61bb2f92de01c566bc19
@@ -89,3 +89,11 @@ Windows Registry Editor Version 5.00
 [HKEY_CURRENT_USER\Software\DownloadManager]
 "LstCheck"="01/08/99"
 ```
+May need to do it every login
+
+#### ThioJoe Explorer App
+Reference https://youtu.be/tTo_MSUIHf8
+Download https://github.com/ThioJoe/AHK-Scripts/releases the exe file.
+Place the exe file into `C:\Program Files` or any privileged dir.
+Add the app to startup
+

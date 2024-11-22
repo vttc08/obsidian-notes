@@ -11,7 +11,7 @@ YouTube Transcript API and file structure
 - [x] convert to yt transcript compatible structure
 
 - [x] Modify SML to accept custom media
-- [ ] Modify NB to accept custom media
+- [x] Modify NB to accept custom media
 - [ ] Benchmark existing small, base, large models
 - [ ] train SML with custom data
 - [ ] train NB with custom data

@@ -11,25 +11,7 @@ During docker volume bind mount, docker will default to creating a directory in 
 `docker tag` command rename docker images, when pushing to dockerhub, if user says latest, it will default to the newest version
 
 **Docker Logs**
-- `--tail` or `-n` will show the last x lines of docker logs
-- `-f` will let the docker logs output to follow terminal and see the logs in real-time
-- `--since` will get logs after a time specified, e.g. `2h` give the logs from 2 hours ago to now
-- `--until` will get the logs up until the point that is specified
-- `docker logs --tail 1000 -f` what VSCode uses for logs
-```bash
-function dl-fn {
-    docker logs -f -n 200 "$1"
-}
-
-alias dlog='dl-fn'
-
-_dlog_autocomplete() {
-    local cur=${COMP_WORDS[COMP_CWORD]}
-    COMPREPLY=($(compgen -W "$(docker ps -a --format '{{.Names}}')" -- "$cur"))
-}
-
-complete -F _dlog_autocomplete dlog
-```
+Moved to [docker-logs](docker-logs.md)
 
 Use `docker inspect | jq .[].Keys` to parse the json data of a given container
 - `.[].HostConfig` general configuration of container

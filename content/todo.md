@@ -1,17 +1,15 @@
 - [ ] AVR/Android Box/adb/TV automation
 - [ ] IPTV
-- [ ] AriaNG
-- [ ] apprise notification
-- [ ] mailrise
 - [ ] Jellyfin AMD transcoding project
 - [ ] Learn Home Assistant in depth
-- [ ] autokuma
+- [ ] autouptimekuma
 - [ ] ytdl-sub/MeTube
 - [ ] DIUN docker update
 - [ ] Lazytainer/ContainerNursery to sleep docker
-- [ ] reactive resume
+- [ ] WARPStack/MegaBasterd/Gluetun
 - [ ] Minecraft discord bot
 - [ ] Minecraft autoshutdown
+- [ ] Minecraft auto update
 - [ ] Minecraft management method (proxmox or headscale)
 - [ ] jellyfin intro skipper
 - [ ] awesome jellyfin
@@ -55,8 +53,10 @@
 - [ ] Traefix
 - [ ] Authelia/lldap multi-server, 
 - [ ] Training sponsorblock
+- [ ] rathole/frp tunneling
 - [x] [authelia-ldap](homeserver/authelia-ldap.md)
 - [x] GhostCMS VPS
+- [x] mailrise
 - [x] VPS setup (document caddy, networks, tools, firewall, ddns)
 - [x] fireshare workflow
 - [x] ssh client config file
@@ -64,6 +64,7 @@
 - [x] Basic Homeassistant in Docker
 - [x] EGOW Entertainment Revamp
 - [x] customized OliveTin icons
+- [x] apprise notification
 - [x] homelab icons folder
 - [x] VNC container
 - [x] documented setup for Minecraft server with Geyser
@@ -82,6 +83,7 @@
 - [x] Sponsorblock using AI
 - [x] ProjectIvy Launcher
 - [x] fix home assistant log spam
+- [x] AriaNG
 
 
 ~~[obsidian-mkdocs]~~
@@ -136,9 +138,11 @@
 
 Programming Projects Todo
 - [ ] Mockup weebly portfolio
+- [ ] Resume template
 - [ ] Ghost CMS Site
 - [ ] SponsorBlock AI Stack
 - [ ] SponsorBlock/RYD server
+- [ ] subtitle merger
 - [ ] Powershell Windows Setup (similar to CTT)
 - [ ] Powershell App Installer/Configurator
 - [ ] Home Theatre Online Troubleshooter
