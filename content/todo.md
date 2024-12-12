@@ -2,11 +2,13 @@
 - [ ] IPTV
 - [ ] Jellyfin AMD transcoding project
 - [ ] Learn Home Assistant in depth
+- [ ] localsend/cli-send tools
 - [ ] autouptimekuma
 - [ ] ytdl-sub/MeTube
 - [ ] DIUN docker update
 - [ ] Lazytainer/ContainerNursery to sleep docker
 - [ ] WARPStack/MegaBasterd/Gluetun
+- [ ] it tools
 - [ ] Minecraft discord bot
 - [ ] Minecraft autoshutdown
 - [ ] Minecraft auto update
@@ -137,7 +139,7 @@
 - [x] document the setup
 
 Programming Projects Todo
-- [ ] Mockup weebly portfolio
+- [x] Mockup weebly portfolio
 - [ ] Resume template
 - [ ] Ghost CMS Site
 - [ ] SponsorBlock AI Stack

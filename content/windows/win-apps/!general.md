@@ -82,14 +82,15 @@ SSH settings on stored in Windows at `C:\Users\hubcc\.ssh\config`, these setting
 Once syncthing is setup, run the powershell script located in `Documents\ssh\ssh_config\configure.ps1` to restore SSH configs
 
 #### Internet Download Manager
-Make registry edit to prevent auto-update
+~~Make registry edit to prevent auto-update~~
 ```powershell
 Windows Registry Editor Version 5.00
 
 [HKEY_CURRENT_USER\Software\DownloadManager]
 "LstCheck"="01/08/99"
 ```
-May need to do it every login
+~~May need to do it every login~~
+Doesn't work, alternative method. When update popup, use `kidm` to force and process of opening and closing and minimizing the app. The `kidm` script is located in `$HOME\scripts\kidm.ps1`
 
 #### ThioJoe Explorer App
 Reference https://youtu.be/tTo_MSUIHf8

@@ -32,6 +32,11 @@ monkey -p com.app.package 1
 ```
 - this command will open the app on Android device by package name
 
+Force kill an app
+```c
+am force-stop com.app.package
+```
+
 Input Text
 ```c
 input text "abc\ dcf\ "
@@ -46,4 +51,14 @@ It also work with `keyevent`
 Record screen
 ```c
 screenrecord "/sdcard/rec.mp4"
+```
+
+Open Image using MiXplorer
+```python
+am start -a android.intent.action.VIEW -d file:///sdcard/Pictures/icon.png -timage/* com.mixplorer.silver/com.mixplorer.activities.ImageViewerActivity
+```
+
+Enable/Disable Pointer Location
+```c
+settings put system pointer_location 0
 ```
