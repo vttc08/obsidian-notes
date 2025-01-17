@@ -1,5 +1,11 @@
-[Change Name of User Profile Folder in Windows 10 | Tutorials (tenforums.com)](https://www.tenforums.com/tutorials/89060-change-name-user-profile-folder-windows-10-a.html)
+**Scenario:** creating a new user account on existing computer
+```powershell
+net user $user /add /active:yes
+net localgroup administrators $user /add
+```
+- to add a password use `/password`
 
+[Change Name of User Profile Folder in Windows 10 | Tutorials (tenforums.com)](https://www.tenforums.com/tutorials/89060-change-name-user-profile-folder-windows-10-a.html)
 **Scenario:** when you're using someone else's computer/account but you want the user profile folder to be the same on every machine you use.
 
 Create an administrator account in windows.

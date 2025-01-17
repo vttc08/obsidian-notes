@@ -19,7 +19,7 @@ complete -F _dlog_autocomplete dlog
 ```
 
 The location where Docker store its logs are `/var/lib/docker/containers/<id>/*.json`
-When a Docker container re-run or removed, the logs are removed.
+When a Docker container re-run or removed, the logs are removed. Logs are not removed if container is restarted.
 
 By default the logging driver is json.
 

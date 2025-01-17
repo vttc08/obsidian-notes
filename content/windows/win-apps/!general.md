@@ -1,6 +1,5 @@
 ### General Windows Apps
 There will be notes to specific apps setup.
-
 #### Powershell 
 ```
 winget install gnu.nano
@@ -20,6 +19,8 @@ The scripts in that folder can also be added in powershell alias
 ```powershell
 new-alias the-alias $env:USERPROFILE/scripts/thescript.ps1
 ```
+#### Obsidian
+The vault specific settings are handled via syncthing. For application data (eg. what vaults are loaded into obsidian), it's stored in a separate folder at `%appdata%/obsidian`
 #### Google Chrome
 #### Extensions
 **[Wayback Machine](https://chromewebstore.google.com/detail/wayback-machine/fpnmgdkabkmnadcjpehmlllkndpkmiak)**
@@ -56,18 +57,18 @@ Disable Auto Updates in `policies.json`
 https://gist.github.com/vttc08/4b2dbf55157a61bb2f92de01c566bc19
 ```powershell
 mkdir -Force "C:\Program Files\Mozilla Firefox\distribution\"
-wget "https://gist.githubusercontent.com/vttc08/4b2dbf55157a61bb2f92de01c566bc19/raw/0deea321e663c1215c45d4ec6e86446902e95c3c/policies.json" -O "C:\Program Files\Mozilla Firefox\distribution\policies.json"
+wget "https://gist.githubusercontent.com/vttc08/4b2dbf55157a61bb2f92de01c566bc19/raw/8bcebf591b3b4d90897a8c7c8cef5e0bd211a5e5/policies.json" -O "C:\Program Files\Mozilla Firefox\distribution\policies.json"
 ```
 **Profiles**
 https://gist.github.com/jooize/5636b9eb975bde30c38b753e9f301de4
 Go to `about:profiles` to create a new profile. Sign in to Firefox account and everything should sync, there is also option to import from Chrome. Once everything is setup, the profile will be stored in `%APPDATA%\Mozilla\Firefox\Profiles`. Alternative it's possible to create it via `profile.ini`.
+**TODO**: figure out what can be deleted in that profile folder for faster transfer
 Once the new profile is created and setup. Go to `about:config` and change these settings
 - `taskbar.grouping.useprofile` create and set to true
 - `browser.startup.blankwindow` set to false
 To create a desktop shortcut use the flag `--no-remote -P "Profile Name"`
 - the icon can be changed, the `.ico` file is located in each of the profile folder
 - there is a `Firefox Master.psd` located at the root profile folder
-
 #### Microsoft Edge
 **Fix your browser managed by organization**
 ```powershell

@@ -66,6 +66,12 @@ megabasterd:
 Use the environment `WEB_LISTENING_PORT=5860` to change the port in case multiple jlesage containers are needed behind a VPN, since all jlesage containers runs on port 5800.
 
 ADD SQL OPTIONS LATER
+```
+run_command_path|/config/reset.sh
+```
+```bash
+kill -s SIGTERM 1 # kill a container from inside
+```
 ![](assets/Pasted%20image%2020241211225635.png)
 Change this in MegaBasterd, by default jlesage apps including this have configuration files located in `/config`, create `reset.sh` with the following content.
 ```bash
@@ -76,3 +82,4 @@ wget --post-data='{"actionId": "reset-megabasterd"}' --header='Content-Type: app
 - uses `wget` instead of `curl` to POST data as it's the default included in jlesage containers
 - the OliveTin has action ID of `reset-megabasterd`
 - uses OliveTin to execute scripts which restart the entire stack
+![](assets/Pasted%20image%2020241211231121.png)
