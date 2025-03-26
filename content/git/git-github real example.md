@@ -21,7 +21,7 @@ git rebase patch/add-ryd
 When FreeTube upstream changes
 ```bash
 git fetch origin # fetch changes from remote repo
-git rebase development
+git rebase origin/development
 ```
 - merge changes if necessary
 

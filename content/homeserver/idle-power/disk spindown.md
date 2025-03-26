@@ -47,5 +47,5 @@ Edit the configuration options at `/etc/defaults/hd-idle`
 - `-l` set the log location, hd-idle will write to log every time a disk spinup
 Check whether HDD's are really spun down
 ```shell
-watch 'for i in b c d; do sudo smartctl -i -n standby /dev/sd$i | grep -Ei "power|model"; done'
+watch 'for i in a b c d; do sudo smartctl -i -n standby /dev/sd$i | grep -Ei "power|model"; done'
 ```

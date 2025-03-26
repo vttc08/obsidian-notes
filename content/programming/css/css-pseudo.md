@@ -1,7 +1,8 @@
 ## Pseudo-Classes
 Target a specific state (eg. hover)
 ```css
-a:hover {}
+a:hover {} /* hover */
+a:visited {} /* visited link */
 ```
 
 ## Pseudo-Element

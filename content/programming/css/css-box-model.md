@@ -62,3 +62,4 @@ Width and height do not have effect on inline element, but it will change the si
 display: block or inline;
 ```
 `display` will override the display style
+`inline-block` will act similar to inline element as it will not force line-break, but it will cause other boxes to move away rather than overlap which is like a block

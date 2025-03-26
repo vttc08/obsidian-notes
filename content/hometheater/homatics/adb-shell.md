@@ -62,3 +62,13 @@ Enable/Disable Pointer Location
 ```c
 settings put system pointer_location 0
 ```
+
+Tested boilerplate code for automating HDR auto
+```bash
+am start -n com.android.tv.settings/.device.displaysound.DisplaySoundActivity && sleep 1 && input tap 1330 598 && sleep 1 && input tap 1300 570
+```
+UI Automator
+```c
+uiautomator dump
+```
+- this dumps a XML file to `/sdcard/window_dump.xmk`

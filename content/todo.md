@@ -3,14 +3,14 @@
 - [ ] Jellyfin AMD transcoding project
 - [ ] Learn Home Assistant in depth
 - [ ] ha-fusion
+- [ ] Traefik
+- [ ] mkvtoolnix automation
 - [ ] localsend/cli-send tools
 - [ ] autouptimekuma
 - [ ] ytdl-sub/MeTube
 - [ ] dozzle logs
 - [ ] DIUN docker update
 - [ ] Lazytainer/ContainerNursery to sleep docker
-- [ ] WARPStack/MegaBasterd/Gluetun
-- [ ] it tools
 - [ ] Minecraft discord bot
 - [ ] Minecraft autoshutdown
 - [ ] Minecraft auto update
@@ -88,6 +88,8 @@
 - [x] ProjectIvy Launcher
 - [x] fix home assistant log spam
 - [x] AriaNG
+- [x] it tools
+- [x] WARPStack/MegaBasterd/Gluetun
 
 
 ~~[obsidian-mkdocs]~~

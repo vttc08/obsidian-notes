@@ -2,12 +2,18 @@
 Element selector, select based on HTML elements
 ```css
 p { }
+h1,h2,h3 {} /* Multiple tags can be selected */
+h1 + p {} /* This will only target paragraph that come after h1 */
 ```
 Universal selector
 ``` css
 * {}
 ```
 - select everything in a page
+- could be use to create seamless header/footer by setting margin to 0
+```css
+* {margin: 0 0;}
+```
 
 **ID Selector**
 ```css
@@ -47,9 +53,4 @@ To select for a class that is nested in generic element, the syntax is different
 p.class {}
 ```
 
-**Selector List**
-```css
-p, a {}
-```
-- lists are separated via `,`
-- apply the same style to multiple element types
+More detailed selectors at [css-pseudo](css-pseudo.md)

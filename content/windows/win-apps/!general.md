@@ -92,7 +92,10 @@ Windows Registry Editor Version 5.00
 ```
 ~~May need to do it every login~~
 Doesn't work, alternative method. When update popup, use `kidm` to force and process of opening and closing and minimizing the app. The `kidm` script is located in `$HOME\scripts\kidm.ps1`
-
+IDM may place incomplete and uncancelled downloads in this folder
+```c
+%APPDATA%\IDM\DwnlData
+```
 #### ThioJoe Explorer App
 Reference https://youtu.be/tTo_MSUIHf8
 Download https://github.com/ThioJoe/AHK-Scripts/releases the exe file.
