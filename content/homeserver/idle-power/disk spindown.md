@@ -1,4 +1,4 @@
- https://yewtu.be/watch?v=IfFyHizCn6k
+https://yewtu.be/watch?v=IfFyHizCn6k
 https://wiki.archlinux.org/title/hdparm
 Spindown disk immediately (sleep mode)
 ```

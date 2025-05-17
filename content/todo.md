@@ -5,6 +5,7 @@
 - [ ] ha-fusion
 - [ ] Traefik
 - [ ] mkvtoolnix automation
+- [ ] CLI subtitle tools [SDH](https://github.com/m-lyon/filter-subs)[pysrt](https://github.com/sorz/asstosrt/)[fuzzmatch](https://github.com/seatgeek/thefuzz)[useful](https://github.com/philiptn/mkv-auto)
 - [ ] localsend/cli-send tools
 - [ ] autouptimekuma
 - [ ] ytdl-sub/MeTube
@@ -41,7 +42,7 @@
 - [ ] YouTube playlist WAN show
 - [ ] Flowchart and documentation for syncthing
 - [ ] paperless ngx
-- [ ] rustdesk
+- [ ] rustdesk selfhost
 - [ ] subcleaner integration
 - [ ] changedetection
 - [ ] arr integration
@@ -53,6 +54,7 @@
 - [ ] Librum
 - [ ] multi-scrobbler/majola
 - [ ] yt-dlp
+- [ ] netmaker
 - [ ] Video/Image upscaling
 - [ ] Traefix
 - [ ] Authelia/lldap multi-server, 

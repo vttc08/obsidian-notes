@@ -3,6 +3,17 @@ Reset
 	- nothing is done to the code yet, unless using `git restore --staged` && `git restore`
 	- if accidently reset, use `git reset 'HEAD@{1}'` to revert the progress to the previous git change
 
+Revert to old
+```bash
+git checkout old_branch $commit_hash
+```
+- this will create a new branch that is only the old commit history
+Revert back
+```bash
+git checkout master
+git branch -D old_branch
+```
+- resume back at master and delete the created branch
 ### Interactive Rebase
 ==Rebasing already pushed commit require a forced push.==
 ```sh

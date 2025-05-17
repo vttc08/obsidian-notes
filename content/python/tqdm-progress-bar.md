@@ -74,3 +74,12 @@ for i in pbar:
 
     100%|[33m█████████████████████████████████████████████████████████████[0m| 100/100 [00:10<00:00,  9.11it/s][0m
 
+Using tqdm with Asynchronous code
+
+```python
+from tqdm.asyncio import tqdm_asyncio
+
+tasks = []
+results = await tqdm_asyncio.gather(*tasks) # run async function wrapped in tqdm progress bar
+# however, some async functions may not be compatible with tqdm
+```

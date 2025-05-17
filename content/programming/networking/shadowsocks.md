@@ -8,9 +8,10 @@ Uses symmetric encryption with a password
 The recommended encryption is `AES-GCM`
 Just SS may not be as safe as GFW can easily detect it
 - firewall cannot decrypt it but it can send a "detection" packet to confirm SS exists
-## SSR
+## SS Plugin
 V2Ray Plugin
-Shadowsocks with plugins that fake it as normal HTTP traffic.
+Shadowsocks with plugins that fake it as **normal HTTP** over WebSocket traffic.
+- or HTTPS/QUIC
 The plugins is `shadowsocks-v2ray-plugin`
 ```shell
 sudo apt install shadowsocks-libev shadowsocks-v2ray-plugin

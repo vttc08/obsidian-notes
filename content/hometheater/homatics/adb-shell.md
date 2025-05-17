@@ -65,10 +65,20 @@ settings put system pointer_location 0
 
 Tested boilerplate code for automating HDR auto
 ```bash
-am start -n com.android.tv.settings/.device.displaysound.DisplaySoundActivity && sleep 1 && input tap 1330 598 && sleep 1 && input tap 1300 570
+input keyevent 3 && sleep 1 && am start -n com.android.tv.settings/.device.displaysound.DisplaySoundActivity && sleep 1 && input tap 1330 598 && sleep 1 && input tap 1300 570 && input keyevent 3
 ```
 UI Automator
 ```c
 uiautomator dump
 ```
-- this dumps a XML file to `/sdcard/window_dump.xmk`
+- this dumps a XML file to `/sdcard/window_dump.xml`
+
+Network Settings
+First in adb shell
+```c
+pm grant com.termux android.permission.DUMP
+```
+Then in Termux
+```c
+/system/bin/dumpsys connectivity | grep NetworkAgentInfo
+```
