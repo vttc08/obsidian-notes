@@ -51,12 +51,12 @@ Wireguard bare metal server
 Tailscale bare metal
 ```bash
 curl -fsSL https://tailscale.com/install.sh | sh
-tailscale up --auth-key tskey-auth-ktAquPBvVC11CNTRL-a5q4B5FuzobrPg2ZHrfHsbfMVwkFAQyA7 --advertise-exit-node --accept-routes --accept-dns=false
+tailscale up --auth-key revoked --advertise-exit-node --accept-routes --accept-dns=false
 ```
 - iperf3
 - wget Jellyfin speedtest, htop, network monitoring
 ```bash
-wget http://10.10.120.16:8096/Items/f5929316143c3ce1ea9cec76a822c411/Download?api_key=20c506147d3f4025bf975030349c03b9 --output-document=/dev/null      
+wget http://10.10.120.16:8096/Items//Download?api_key= --output-document=/dev/null      
 ```
 Outline VPN server, 3x-ui VLESS + WS + TLS (Caddy lego and cloudflare) and VMESS + WS
 - speedtest, CPU monitoring
