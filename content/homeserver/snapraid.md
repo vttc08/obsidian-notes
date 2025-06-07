@@ -73,7 +73,12 @@ snapraid fix -f FILE or DIR/ or -m
 - `-m` option will fix every deleted files
 - `-d` will act on entire disk (eg. for recovering), the disk name eg. `d1` is given in the configuration file, it will also fix parity
 - `-e` will fix errors in the [scrub](snapraid.md#Scrub) command
-
+Fixing delete files on Radarr behaving and upgrade
+```bash
+snapraid fix -f /Movies/Name/file.srt
+```
+- must provide it as absolute path `/Movies` but without disk number `d1`
+- the file path and name can be found by `snapraid diff | grep`
 #### Check
 `snapraid check` verify all files and parity data
 - `-a` is audit only, only the file data is checked and parity data is ignored

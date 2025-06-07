@@ -1,4 +1,4 @@
-- [ ] AVR/Android Box/adb/TV automation
+- [x] AVR/Android Box/adb/TV automation
 - [ ] IPTV
 - [ ] Jellyfin AMD transcoding project
 - [ ] Learn Home Assistant in depth
@@ -9,7 +9,6 @@
 - [ ] localsend/cli-send tools
 - [ ] autouptimekuma
 - [ ] ytdl-sub/MeTube
-- [ ] dozzle logs
 - [ ] DIUN docker update
 - [ ] Lazytainer/ContainerNursery to sleep docker
 - [ ] Minecraft discord bot
@@ -21,7 +20,6 @@
 - [ ] muer (CasaOS) music server and other CasaOS apps
 - [ ] Apache Guacamole/Nexterm (sync it with ssh_config)
 - [ ] Meshcentral
-- [ ] Document Invidious setup (when it works again)
 - [ ] Music server with deemix + popular songs using d-fi
 - [ ] git sync and selfhosted git
 - [ ] Mealie or Tandoor
@@ -32,8 +30,10 @@
 - [ ] Advanced Gamestreaming
 - [ ] Advanced Ghost CMS
 - [ ] Benhelp homepages for Oracle Cloud (nzbget, radarr)
-- [ ] librespeedtest
+- [ ] Cloudflare Zero Trust
 - [ ] scrutiny hdd
+- [ ] ffilebrowser quantum
+- [ ] sftpgo
 - [ ] Promethesus, Grafana, InfluxDB
 - [ ] homepages for langley BC  
 - [ ] Python music add lyric
@@ -92,6 +92,7 @@
 - [x] AriaNG
 - [x] it tools
 - [x] WARPStack/MegaBasterd/Gluetun
+- [x] dozzle logs
 
 
 ~~[obsidian-mkdocs]~~

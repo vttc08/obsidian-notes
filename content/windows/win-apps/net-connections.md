@@ -15,6 +15,15 @@ By default the saves location on Windows is
 ```
 ~/.wind
 ```
+### Tabby Terminal
+```powershell
+winget install eugeny.tabby
+```
+By default it will import SSH config are `config` file.. But for complete configuration and settings, it stores config file at
+```
+%appdata%/tabby/config.yaml
+```
+Copying all the content to the computer will restore operation.
 ## SMB
 ## Iperf3
 Iperf used for network testing, for instruction on how to use instead of installation refer to [iperf3](../../linux/iperf3.md)
