@@ -1,5 +1,5 @@
 [shadowsocks](shadowsocks.md)
-Hysteria
+~~Hysteria~~
 StreisandVPN
 Outline VPN
 Amnesiz VPN

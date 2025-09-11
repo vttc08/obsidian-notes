@@ -25,6 +25,18 @@ Host github.com
   IdentityFile github.key
 ```
 
+### Wiki
+Github built-in Wiki
+To edit and create a wiki, go to the wiki tab in the repo, it's possible to create the wiki in GUI.
+To clone the wiki, use the following command (the URL has `.wiki.git` at the end):
+```bash
+git clone https://github.com/vttc08/your-repo.wiki.git
+```
+Github wiki consists of pages, each page is a markdown file which will show up at the sidebar. The wiki name will be sorted alphabetically, so if you want to have a specific order, prefix the page name with numbers (e.g. `01-Introduction.md`, `02-Installation.md`).
+![](assets/Pasted%20image%2020250805220532.png)
+Footers and sidebar can be added to the wiki by creating a `_Footer.md` and `_Sidebar.md` file in the root of the wiki. 
+Each wiki page can be expanded based on subheadings.
+
 **Branches**
 The default branch in github is `master`, any new branches through Github pull request would be based on master branch. This can be changed.
 - go to Settings -> General -> Default Branch

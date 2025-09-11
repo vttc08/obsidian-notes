@@ -26,13 +26,22 @@ docker run -v /path/to/folder:/folder
 docker run -v myvol:/app
 ```
 - the files and permissions are managed by Docker, useful if the container itself do not respect `PUID/PGID` for file permissions, also good for databases
-
+### tmpfs
+```yaml
+services:
+  app:
+    tmpfs:
+	  - /unused
+```
+Using `tmpfs` prevents Docker from creating a anonymous volume when spinning up a container with `VOLUME` in the Dockerfile.
 ## Filesystem
 ### Storage
 ```bash
 docker ps -s
 ```
 - gets the size/virtual size of docker container
+- size - container size
+- virtual size - size of image/shared
 Docker uses a union filesystem (similar to MergerFS) that combine the data into all layers. The files within containers are stored in `/var/lib/docker/overlay2`
 ![](assets/Pasted%20image%2020240723152323.png)
 - **Writable Layer** - all the writes of a Docker container goes to this layer and will be deleted when container is gone

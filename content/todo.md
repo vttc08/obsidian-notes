@@ -1,4 +1,3 @@
-- [x] AVR/Android Box/adb/TV automation
 - [ ] IPTV
 - [ ] Jellyfin AMD transcoding project
 - [ ] Learn Home Assistant in depth
@@ -9,11 +8,12 @@
 - [ ] localsend/cli-send tools
 - [ ] autouptimekuma
 - [ ] ytdl-sub/MeTube
+- [ ] Storyteller/AI audiobook
 - [ ] DIUN docker update
-- [ ] Lazytainer/ContainerNursery to sleep docker
+- [ ] Lazytainer/ContainerNursery/dockerwakeup to sleep docker
 - [ ] Minecraft discord bot
 - [ ] Minecraft autoshutdown
-- [ ] Minecraft auto update
+- [ ] Minecraft auto update plugin
 - [ ] Minecraft management method (proxmox or headscale)
 - [ ] jellyfin intro skipper
 - [ ] awesome jellyfin
@@ -93,6 +93,7 @@
 - [x] it tools
 - [x] WARPStack/MegaBasterd/Gluetun
 - [x] dozzle logs
+- [x] AVR/Android Box/adb/TV automation
 
 
 ~~[obsidian-mkdocs]~~

@@ -15,7 +15,7 @@ Deployment time
 
 ## Misc
 Time to deploy from API (Ubuntu and Debian)
-- time between API request to successful SSH with `whoami` printed\
+- time between API request to successful SSH with `whoami` printed
 On GUI only Debian is available for vc2-1c-0.5
 
 ewr + deb 12 + lowest tier = 139.23s

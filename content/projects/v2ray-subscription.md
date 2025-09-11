@@ -1,0 +1,1 @@
+Managing master subscription file for clients to use
