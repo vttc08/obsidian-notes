@@ -47,7 +47,7 @@ jobs:
   # Runs the rsync command to the remote site (caddy reverse proxy)
       - name: Deploy the website
         run: >-
-            rsync -avx --delete --exclude '.ssh' --exclude '.git' public/ $DEPLOY_USERNAME@$DEPLOY_SERVER:./docker/caddy/www
+            rsync -avx --delete --exclude '.ssh' --exclude '.git' public/ $DEPLOY_USERNAME@$DEPLOY_SERVER:./docker/npmplus/www/html/digitalgarden
         env:
           DEPLOY_SERVER: ${{ secrets.ORACLE_ARM_X_IP }}
           DEPLOY_USERNAME: ubuntu
