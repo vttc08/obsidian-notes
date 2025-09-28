@@ -21,3 +21,4 @@ Reality
 Easytier
 Cloak
 Intestellar and similar proxy
+https://github.com/alexandrosmagos/dyn-dns-list dyn-dns list

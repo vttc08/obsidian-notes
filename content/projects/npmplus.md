@@ -5,6 +5,12 @@ admin@example.com
 
 Must delete all data and recreate the container if the password is not visible
 
+Fix permission denied
+```bash
+echo "net.ipv4.ip_unprivileged_port_start=0" | sudo tee -a /etc/sysctl.conf
+sudo sysctl -p
+```
+
 Dynu
 - use API Key, DNS challenge
 - remember to use both the `*` and normal domain name
@@ -48,6 +54,11 @@ limit_req zone=mylimit burst=5 nodelay;
 - set the zone to the name defined earlier
 - `burst` allow number of requests to go over the limit in a short time
 - `nodelay` do not delay the burst requests that goes above the limit
+
+Logging
+```yaml
+      - "LOGROTATE=true" 
+```
 
 
 

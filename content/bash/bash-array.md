@@ -42,3 +42,39 @@ ${newlist[@]:index:length}
 ```
 - index is the starting index (inclusive)
 - length indicate how many items from the starting index to include
+
+## Bash Dictionary
+This is similar to Python dictionaries, to declare a dictionary (associative array):
+
+```bash
+declare -A mydict
+mydict=( [key1]="value1" [key2]="value2" [key3]="value3" )
+```
+- use `declare -A` for associative arrays
+- keys and values are assigned using `[key]=value` syntax
+
+Getting values from dictionary:
+- access value by key: `${mydict[key1]}`
+- get all keys: `${!mydict[@]}`
+- get all values: `${mydict[@]}`
+
+```bash
+echo ${mydict[key1]}      # value for key1
+echo ${!mydict[@]}        # all keys
+echo ${mydict[@]}         # all values
+```
+
+Add or update key-value pairs:
+```bash
+mydict[newkey]="newvalue"
+```
+
+Remove a key-value pair:
+```bash
+unset mydict[key2]
+```
+
+Get the number of key-value pairs:
+```bash
+echo ${#mydict[@]}
+```

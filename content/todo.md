@@ -1,5 +1,7 @@
 - [ ] IPTV
 - [ ] Jellyfin AMD transcoding project
+- [ ] PVE Power Draw Project
+- [ ] CI/CD docs and digital garden
 - [ ] Learn Home Assistant in depth
 - [ ] ha-fusion
 - [ ] Traefik

@@ -86,3 +86,17 @@ export default {
   },
 };
 ```
+Boilerplate code for proxying additional paths
+```js
+export default {
+  async fetch(request, env) {
+    let url = new URL(request.url);
+    if (pathname.startsWith("/path1")) {
+      url.hostname = "reverseproxy.yourdomain.tld";
+      return fetch(new Request(url.toString(), request));
+    }
+    url.hostname = 'api.openai.com'
+    return fetch(new Request(url, request));
+  },
+};
+```

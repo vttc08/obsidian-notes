@@ -64,6 +64,12 @@ It is done via appending
 #reality-18mwh38z-204.80MB%F0%9F%93%8A-23H%E2%8F%B3
 ```
 
+New Todos
+- enabled tunnels (disable if pre-req not met)
+- serveo support
+- custom frontend callback
+- explore docker
+
 English Promo
 I have a NodeJS server - terminal `npm start` and hello world todo page shows up
 Scratch that
