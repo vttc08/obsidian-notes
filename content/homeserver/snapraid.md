@@ -104,4 +104,31 @@ https://github.com/Chronial/snapraid-runner
 https://github.com/fightforlife/snapraid-runner with apprise support
 - `which snapraid` to get the binary file of snapraid, which might be needed for configure the runner
 - the python script will run SnapRAID diff command, and only run sync if the deleted is below threshold, optionally can be used to periodically scrub the array
+By default the cron scripts are located in `~/scripts`
+```bash
+cd ~/scripts
+git clone https://github.com/fightforlife/snapraid-runner
+cd snapraid-runner
+mv snapraid-runner.py runner.py
+mv snapraid-runner.conf.example snapraid-runner.conf
+```
+Configuration
+```diff
++++ executable = /usr/local/bin/snapraid
++++ config = /etc/snapraid.conf
++++ file = sr.log
++++ url = apprise://
+```
+- use `which snapraid` to find executable location, use the default location
+- it will store as `sr.log` instead
+Crontab (every 2 days) - require `uv` installed and initialized. To install uv  
+```python
+uv init
+uv add apprise
+uv sync
+```
+
+```bash
+5 2 */2 * * SHELL=/bin/bash cd /home/karis/scripts/snapraid-runner && /home/karis/.local/bin/uv run runner.py
+```
 

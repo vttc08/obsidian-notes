@@ -14,7 +14,7 @@
 - [ ] DIUN docker update
 - [ ] Lazytainer/ContainerNursery/dockerwakeup to sleep docker
 - [ ] Minecraft discord bot
-- [ ] Minecraft autoshutdown
+- [ ] Minecraft autoshutdown, lazymc
 - [ ] Minecraft auto update plugin
 - [ ] Minecraft management method (proxmox or headscale)
 - [ ] jellyfin intro skipper

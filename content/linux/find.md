@@ -23,16 +23,16 @@ Run a command on each found file:
 ```bash
 find <path> <options> -exec <command> {} \;
 ```
-Examples using `-exec`:
+Examples using `-exec` (delete found files):
 ```bash
-# Delete found files
 find <path> -type f -name "*.log" -exec rm {} \;
 ```
 Move files to another directory
 ```bash
 find <path> -type f -name "*.txt" -exec mv {} /destination/dir/ \;
 ```
-Syntax for -exec
+Syntax for -exec (multiline and same line)
 ```bash
--exec cmd {} \ # {} the placeholder for file
+-exec cmd {} \; # {} the placeholder for file
+-exec cmd {} + # cmd file1 file2 file3 (on the same line)
 ```

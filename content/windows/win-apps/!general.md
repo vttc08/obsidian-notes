@@ -102,3 +102,8 @@ Download https://github.com/ThioJoe/AHK-Scripts/releases the exe file.
 Place the exe file into `C:\Program Files` or any privileged dir.
 Add the app to startup
 
+**ShareX**
+```powershell
+winget install sharex.sharex
+```
+For all settings and configurations, ShareX

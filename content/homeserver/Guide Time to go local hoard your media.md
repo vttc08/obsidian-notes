@@ -12,6 +12,7 @@ To self-host your media, we will use media software stacks that manage, download
 - **Media Streaming**: Jellyfin - Organizes and streams your media with a user-friendly dashboard.
 - **Media Management**: Radarr, Sonarr, Prowlarr - Automates media addition and quality control.
 - **Media Download**: Qbittorrent, Deluge, Transmission - Torrent downloaders.
+- **VPN** (if necessary): Gluetun with your favorite OpenVPN/Wireguard provider
 - **DDL Tools**: JDownloader, MegaBasterd, Webtop - Optimized for direct downloads and file sharing sites if torrenting is not your thing.
 That's the gist of it, many self-hosters who started with media also end up deeper in the rabbit hole and selfhost Home Automation, Backup, Photos and anything you can imagine. Now for the hard part.
 

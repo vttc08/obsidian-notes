@@ -1,11 +1,11 @@
-# Python Async
-Event Loop - manage distribute tasks
-- when a task await, it will be put into the event loop and another task will run
-`await` - pause the function until the result is ready, only tasks that are awaitable can be awaited
-- awaitable: coroutine, task, future
+# httpx
+```bash
+pip install httpx
+```
 
-Why we can't use `await` in normal function?
-- synchronous functions such as `sleep` and `requests` will block the event loop, when there's IO bound tasks, it will not yield control back to the event loop
+```python
+
+```
 
 ```python
 import asyncio
@@ -147,16 +147,3 @@ async def my_coro():
         await asyncio.sleep(1)
 await asyncio.gather(*(my_coro() for i in range(10))) # only the first 2 will run at the same time
 ```
-
-### Profiling Async Code
-Use scalene to profile async code.
-```bash
-pip install scalene
-scalene your_script.py
-```
-The time is divided via Time: Python | native | system
-- Python: time spent in Python code
-- Native: time spent in C extensions
-- System: time spent in system calls
-
-Most IO bound tasks will spend most of the time in system calls.

@@ -66,8 +66,11 @@ It is done via appending
 
 New Todos
 - enabled tunnels (disable if pre-req not met)
-- serveo support
+- serveo, devtunnel support
+- complex loclx support
+- auto respin tunnels (e.g. Pinggy)
 - custom frontend callback
+- QRCode
 - explore docker
 
 English Promo
