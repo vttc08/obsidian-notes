@@ -4,7 +4,8 @@ Python Dataclasses
 Python's `dataclasses` module, introduced in Python 3.7, provides a decorator and functions for automatically adding special methods to user-defined classes. This is particularly useful for classes that are primarily used to store data, as it reduces boilerplate code.
 
 ```python
-from dataclasses import dataclass, field
+from dataclasses import dataclass, field, asdict
+import json
 ```
 
 ```python
@@ -37,4 +38,25 @@ Making a list with dataclass is different
 @dataclass
 class Objects:
     items: list[Item] = field(default_factory=list)
+```
+
+Serialize and Deserialize with dataclass
+
+```python
+# serialize
+@dataclass
+class Object:
+    items: list[Item] = field(default_factory=list)
+
+myobj = Object(items=[Item(name="item1", price=10.0), Item(name="item2", price=20.0)])
+mydict = asdict(myobj)
+json.dumps(mydict, indent=4)
+```
+
+```python
+# deserialize
+json_str = '''
+'''
+data = json.loads(json_str)
+myobj = Object(**data)
 ```

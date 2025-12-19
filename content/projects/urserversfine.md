@@ -12,7 +12,7 @@ Oracle Cloud testing
 UFW open port, but no services running/listening, SYN -> RST -> REFUSED
 UFW port closed, service is running SYN -> retransmission -> Timeout
 - packet silently dropped by DENY, which is to DROP
-- when set to REJECT, it doesn't drop the packet, same symptom as open port but no service
+- when set to `REJECT, it doesn't drop the packet, same symptom as open port but no service
 
 General
 - MAC address of WiFi, use API to lookup vendor

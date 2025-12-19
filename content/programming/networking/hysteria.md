@@ -83,7 +83,10 @@ touch hysteria.yaml && mkdir certs
 - this makes the necessary assets with right permission before container starts
 
 `systemd` configuration
-Symlink (additional hy2 servers)
+Symlink (additional hy2 servers) or use systemd
+```bash
+systemctl enable hysteria-obfs --now
+```
 ```bash
  ln -s /etc/systemd/system/hysteria-obfs.service /etc/systemd/system/multi-user.target.wants/hysteria-obfs.service
 ```

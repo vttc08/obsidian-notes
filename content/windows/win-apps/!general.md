@@ -1,24 +1,7 @@
 ### General Windows Apps
 There will be notes to specific apps setup.
-#### Powershell 
-```
-winget install gnu.nano
-nano $profile
-```
-Add these lines into PowerShell profile
-``` powershell
-Set-PSReadlineKeyHandler -Key ctrl+d -Function ViExit
-Set-Alias which where.exe
-```
-- these will make terminal window exit on ctrl-d
-- use the `which` command as if on Linux
-Ensure the scripts folder are located at `$HOME\scripts`
-- the scripts in these folder are quick scripts also used in task scheduler
-- the folder contains the `.ps1` files as well as `.xml` file which is used for importing tasks in the scheduler
-The scripts in that folder can also be added in powershell alias
-```powershell
-new-alias the-alias $env:USERPROFILE/scripts/thescript.ps1
-```
+
+Setup [powershell](powershell.md) first
 #### Obsidian
 The vault specific settings are handled via syncthing. For application data (eg. what vaults are loaded into obsidian), it's stored in a separate folder at `%appdata%/obsidian`
 #### Google Chrome

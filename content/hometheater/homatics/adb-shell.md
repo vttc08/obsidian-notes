@@ -46,7 +46,17 @@ Input Tap
 ```c
 input tap x y
 ```
-It also work with `keyevent`
+It also work with [keyevent](https://gist.github.com/arjunv/2bbcca9a1a1c127749f8dcb6d36fb0bc)
+```c
+input keyevent 30
+```
+- up: 19
+- down: 20
+- left: 21
+- right: 22
+- enter: 23
+- home: 3
+- back: 4
 
 Record screen
 ```c
